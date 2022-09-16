@@ -14,7 +14,7 @@
   </form>
 </template>
 <script lang="ts">
-import useValidate from '@vuelidate/core'
+import {useVuelidate} from '@vuelidate/core'
 import { required, email, minLength, sameAs } from '@vuelidate/validators'
 
 import { defineComponent, reactive, computed } from 'vue'
@@ -39,7 +39,7 @@ export default defineComponent({
       }
     });
 
-    const v$ = useValidate(rules, state);
+    const v$ = useVuelidate(rules, state);
 
     return {
       state,
@@ -51,8 +51,9 @@ export default defineComponent({
       this.v$.$validate();
       if(!this.v$.$error) {
         console.log('Success');
+        console.log(this.v$);
       } else {
-        console.log('Error!');
+        console.log(this.v$.$errors);
       }
     }
   }
