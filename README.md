@@ -1,24 +1,6 @@
 # test-vuelidate
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Documentation
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[Easy Form Validation with Vuelidate | Vue 3 Tutorial](https://www.youtube.com/watch?v=2BR6Vvjw3wQ)

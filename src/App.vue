@@ -1,6 +1,5 @@
 <template>
-  <p>YO</p>
-
+  <h1>My Vuelidate Test </h1>
   <FormComponent />
 </template>
 
@@ -17,7 +16,19 @@ export default defineComponent({
 </script>
 
 <style>
+body, html {
+  background-color: rgb(72, 85, 112);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: bisque;
+  margin: 50px 0;
+}
 #app {
- 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 </style>
